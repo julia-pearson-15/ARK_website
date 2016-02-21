@@ -1,0 +1,31 @@
+<!-- DonateController as donate  -->
+<div id="donate-full-page" class="full-width">
+  <div id="donation-section">
+    <p class="donate-small-text white">Step 1/4</p>
+    <div id="donate-form" class="full-width">
+      <p id="i-am-giving" class="large left">I am giving</p>
+      <!-- the following value manipulation allows us to click the choices -->
+      <input id="enter-cash" class="right small white" value="{{donate.currentValue}}">
+    </div> <!-- donate-form -->
+    <!-- The following line of code displays the preset sentence attached to the cash amount -->
+    <div id="what-money-means" class="small">{{donate.values[donate.whatMoneyMeans]}}</div>
+    <div id="donation-choices">
+      <!-- the following functions change the cash input value and sentence relating -->
+      <button ng-click="donate.thirty()" class="donation-choice left white small">$30</button>
+      <button ng-click="donate.oneFifty()" class="donation-choice left white small">$150</button>
+      <button ng-click="donate.fiveHundo()" class="donation-choice left white small">$500</button>
+      <button ng-click="donate.oneThousand()" class="donation-choice left white small">$1000</button>
+    </div> <!-- donation-choices -->
+    <div id="payments">
+      <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=U_OzHByu78hey_58_gHs9gOiFu5xqjk29viVIjkcCEb2UNPkpMv13K2M6U8&dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb">
+        <div id="credit" class="paypal left">
+          <img id="credit-img" src="/images/donate/credit-card.png">
+        </div>
+      </a>
+      <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=U_OzHByu78hey_58_gHs9gOiFu5xqjk29viVIjkcCEb2UNPkpMv13K2M6U8&dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb">
+        <div id="paypal" class="paypal white small right">PayPal</div>
+      </a>
+    </div> <!-- payments -->
+    <p class="donate-small-text white">*2,500* - a school that self-feeds in three years</p>
+  </div> <!-- donation-section -->
+</div> <!-- donate-full-page

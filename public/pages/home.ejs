@@ -1,0 +1,101 @@
+<!-- HomeController as home -->
+<div>
+  <div id="sliding-photos">
+    <div class="testimonial white small {{home.photos[home.currentPhoto].photoClass}}">
+      <p>{{home.photos[home.currentPhoto].testimonialQuote}}</p>
+    </div> <!-- testimonial -->
+    <a href="#donate" class="landing-donate-button orange-buttons white large">FUEL THE DREAM</a>
+    <img class="full-width" src="{{home.photos[home.currentPhoto].photoSrc}}">
+  </div> <!-- sliding-photos -->
+  <div id="sliding-nav">
+    <div ng-click="home.navCircleOne()" class="sliding-nav-circle left trans-white"></div>
+    <div class="sliding-nav-circle left"></div>
+    <div ng-click="home.navCircleTwo()" class="sliding-nav-circle left trans-white"></div>
+    <div class="sliding-nav-circle left"></div>
+    <div ng-click="home.navCircleThree()" class="sliding-nav-circle left trans-white"></div>
+  </div> <!-- sliding-nav -->
+  <p id="tangible-results" class="grey large bold">ARK FEEDING PROGRAM GETS TANGIBLE RESULTS.</p>
+  <div id="infographics" class="full-width">
+    <div id="attendence-books" class="left">
+      <p class="medium bold orange">THROUGH THE ROOF ATTENDANCE!</p>
+      <img class="info-img" src="/images/home/attendence_books.png">
+      <p class="small grey">With feeding, kids are staying in school</p>
+    </div> <!-- attendence-books -->
+    <div id="malnutrition-graph" class="left">
+      <p class="medium bold orange">ELIMINATING MALNUTRITION</p>
+      <img class="info-img" src="/images/home/malnutrition_graph.png">
+    </div> <!-- malnutrition-graph -->
+    <div id="parent-crabs" class="left">
+      <p class="medium bold orange">NEW SUSTAINABLE INCOME</p>
+      <img class="info-img" src="/images/home/parent_percentage.png">
+      <p class="small grey">80% of food bought from parents</p>
+      <p class="small grey">500,000+ lunches</p>
+    </div> <!-- parent-crabs -->
+  </div> <!-- infographics -->
+  <div class="impact-link-container full-width">
+    <a href="#impact" class="orange bold" id="impact-link">Check out our impact in 2014-15!</a> 
+  </div>
+  <div id="price-cirlces">
+    <div id="price-circle-header">
+      <p class="price-circle-text medium bold orange">ONCE KIDS ARE IN SCHOOL,</p>
+      <p class="price-circle-text medium bold orange">OUR ADD-ON SOLUTIONS ALLOW THEM TO REACH BEYOND.</p>
+    </div> <!-- price-circle-header -->
+    <div id="price-circle-thirds" class="full-width">
+      <div class="price-circle-dividers left" id="lunch-price">
+        <p class="individual-circle-text bold orange">GET A KID IN SCHOOL FOR A WHOLE YEAR!</p>
+        <img src="/images/home/lunch-price.png" class="full-width">
+      </div> <!--  lunch-price -->
+      <div class="price-circle-dividers left" id="supplies-price">
+        <p class="individual-circle-text bold orange">ENABLE HER TO LEARN, DREAM & ADVANCE.</p>
+        <img src="/images/home/supplies-price.png" class="full-width">
+      </div> <!-- supplies-price -->
+      <div class="price-circle-dividers left" id="invest-price">
+        <p class="individual-circle-text bold orange">INVEST IN DREAMS CREATE NEW INCOME.</p>
+        <img src="/images/home/invest-price.png" id="img-shift-down" class="full-width">
+      </div> <!-- invest-price -->
+      <div id="per-year" class="left"><img class="spanners full-width" src="/images/home/per-year.png"></div>
+      <div id="per-project" class="left"><img class="spanners full-width" src="/images/home/per-project.png"></div>
+    </div> <!-- price-circle-thirds --> 
+  </div> <!-- price-cirlces -->
+  <div id="co-invest-landing" class="full-width">
+    <p class="co-invest-text white large bold" style="margin-top: 0px;">DON'T HAND-OUT.  CO-INVEST.</p>
+    <div id="co-invest-graphic">
+      <div class="info-graphic-divider left">
+        <img class="info-graphic-pictures" src="/images/home/ear.png">
+        <p class="small bold orange">LISTEN</p>
+        <p class="mini-graphic-text white">to their solutions. They know better.</p>
+      </div> <!-- listen -->
+      <div class="info-graphic-divider left">
+        <img class="info-graphic-pictures" src="/images/home/handshake.png">
+        <p class="small bold orange">CO-INVEST</p>
+        <p class="mini-graphic-text white">alongside them. They, too, want a stake in their future. </p>
+      </div> <!-- work-together -->
+      <div class="info-graphic-divider left">
+        <img class="info-graphic-pictures" src="/images/home/peso.png">
+        <p class="small bold orange">GO LOCAL</p>
+        <p class="mini-graphic-text white">and make the program affordable.</p>
+      </div> <!-- work-together -->
+      <div class="info-graphic-divider left">
+        <img class="info-graphic-pictures" src="/images/home/muscle.png">
+        <p class="small bold orange">EMPOWER</p>
+        <p class="mini-graphic-text white">them to run the programs. They want to learn new  skills and do it on their own.</p>
+      </div> <!-- work-together -->
+      <div class="info-graphic-divider left">
+        <img class="info-graphic-pictures" src="/images/home/pencil.png">
+        <p class="small bold orange">MEASURE</p>
+        <p class="mini-graphic-text white">results and track impact and cash for accountability</p>
+      </div> <!-- work-together -->
+    </div>
+    <div id="co-invest-buttons" style="margin-bottom: 0px;">
+      <div class="left orange-buttons white large">GET 3X RETURN</div>
+      <div class="right orange-buttons white large">LEARN MORE</div>
+    </div>
+  </div> <!-- co-invest-landing -->
+  <div id="orange-block" class="full-width"></div>
+  <img class="full-width" src="/images/home/final-photo.jpg">
+  <div id="final-thoughts" class="full-width">
+    <a href="https://www.facebook.com/AdvancementForRuralKids/?fref=ts"><img class="social-media-link" src="/images/home/facebook.png"></a>
+    <a href="https://twitter.com/ruralkids"><img class="social-media-link" src="/images/home/twitter-logo.png"></a>
+    <p id="ark-message">ARK, Advancement for Rural Kids, partners with rural communities in the developing world to feed, keep kids in school, and create new income.  We are rrridiculously serious about creating solutions WITH the community. We only invest in communities that invest in themselves and only in solutions that locals can afford.  We track impact and cash flows, and create a better future for all involved in the journey – student, teacher, parent, community, investor, ARK die hard.   We are a registered 501(c)(3) organization in the US, collaborate with talent and welcome support from all over the world.</p>
+  </div> <!-- final-thoughts -->
+</div>

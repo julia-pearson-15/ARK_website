@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:3000/#/donate -->
+<html ng-app="ArkApp" class="ng-scope" hola_ext_inject="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <title>Advancement for Rural Kids</title>
+  <script src="./Advancement for Rural Kids_files/angular.js"></script><style type="text/css"></style>
+  <script src="./Advancement for Rural Kids_files/angular-route.js"></script>
+  <script src="./Advancement for Rural Kids_files/jquery.min.js"></script>
+  <script src="./Advancement for Rural Kids_files/app.js"></script>
+  <script src="./Advancement for Rural Kids_files/nav_controller.js"></script>
+  <script src="./Advancement for Rural Kids_files/home_controller.js"></script>
+  <script src="./Advancement for Rural Kids_files/donate_controller.js"></script>
+  <script src="./Advancement for Rural Kids_files/impact_controller.js"></script>
+  <link rel="stylesheet" type="text/css" href="./Advancement for Rural Kids_files/style.css">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="nav-bar" class="full-width ng-scope" ng-controller="NavController as nav">
+    <a href="http://localhost:3000/#/" ng-click="nav.home()" ng-mouseover="nav.reset()"><img src="./Advancement for Rural Kids_files/ARK_logo.png" id="icon"></a> <!-- home/icon -->
+    <div id="menu-bar">
+      <a href="http://localhost:3000/#/donate" ng-mouseover="nav.donate()" class="nav-button right nav-text-main bold grey small" id="donate" style="color: rgb(102, 102, 102);">DONATE</a> <!-- donate --> 
+      <div ng-mouseover="nav.join()" class="nav-button right nav-text-main bold grey small" id="join" style="color: rgb(102, 102, 102);">JOIN </div> <!-- join -->
+      <div ng-mouseover="nav.schools()" class="nav-button right nav-text-main bold grey small" id="schools" style="color: rgb(102, 102, 102);">SCHOOLS </div> <!-- schools -->
+      <div ng-mouseover="nav.solutions()" class="nav-button right nav-text-main bold grey small" id="solutions" style="color: rgb(102, 102, 102);">SOLUTIONS </div> <!-- solutions -->
+      <a href="http://localhost:3000/#/impact" ng-mouseover="nav.impact()" class="nav-button right nav-text-main bold grey small" id="impact" style="color: rgb(102, 102, 102);">IMPACT</a> <!-- impact -->
+      <div ng-mouseover="nav.reset()" class="nav-button right" id="reset"> </div> <!-- reset -->
+    </div> <!-- menu-bar -->
+    <div ng-show="nav.toggle" id="second-menu" class="ng-hide">
+      <ul id="second-nav-buttons">
+        <!-- ngRepeat: button in nav.secondNav[nav.whichNav] -->
+      </ul>
+    </div>
+  </div> <!-- navbar -->
+  <div id="main-content" class="full-width"> 
+    <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- DonateController as donate  -->
+<div id="donate-full-page" class="full-width ng-scope">
+  <div id="donation-section">
+    <p class="donate-small-text white">Step 1/4</p>
+    <div id="donate-form" class="full-width">
+      <p id="i-am-giving" class="large left">I am giving</p>
+      <!-- the following value manipulation allows us to click the choices -->
+      <input id="enter-cash" class="right small white" value="250">
+    </div> <!-- donate-form -->
+    <!-- The following line of code displays the preset sentence attached to the cash amount -->
+    <div id="what-money-means" class="small ng-binding">send her to school</div>
+    <div id="donation-choices">
+      <!-- the following functions change the cash input value and sentence relating -->
+      <button ng-click="donate.thirty()" class="donation-choice left white small">$30</button>
+      <button ng-click="donate.oneFifty()" class="donation-choice left white small">$150</button>
+      <button ng-click="donate.fiveHundo()" class="donation-choice left white small">$500</button>
+      <button ng-click="donate.oneThousand()" class="donation-choice left white small">$1000</button>
+    </div> <!-- donation-choices -->
+    <div id="payments">
+      <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&amp;SESSION=U_OzHByu78hey_58_gHs9gOiFu5xqjk29viVIjkcCEb2UNPkpMv13K2M6U8&amp;dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb">
+        <div id="credit" class="paypal left">
+          <img id="credit-img" src="./Advancement for Rural Kids_files/credit-card.png">
+        </div>
+      </a>
+      <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&amp;SESSION=U_OzHByu78hey_58_gHs9gOiFu5xqjk29viVIjkcCEb2UNPkpMv13K2M6U8&amp;dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb">
+        <div id="paypal" class="paypal white small right">PayPal</div>
+      </a>
+    </div> <!-- payments -->
+    <p class="donate-small-text white">*2,500* - a school that self-feeds in three years</p>
+  </div> <!-- donation-section -->
+</div> <!-- donate-full-page--></div> <!-- template -->
+  </div> <!-- main-content -->
+
+</body></html>
