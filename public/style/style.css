@@ -515,3 +515,18 @@ body {
   height: 300px;
   width: 200px; 
 }
+#comming-soon-full-page{
+  height: 500px;
+}
+#comming-soon-text-container{
+  width: 50%;
+  margin: 0 auto;
+  height: 200px;
+  text-align: center;
+}
+.comming-soon-text{
+  position: relative;
+  top: 150px;
+  font-size: 40px;
+  font-weight: bold;
+}

@@ -23,4 +23,9 @@ arkApp.config(function($routeProvider) {
     controller : 'FeedingController as feed'
   });
 
+  $routeProvider.when('/comming_soon', {
+    templateUrl : 'pages/comming_soon.ejs',
+    controller : 'CommingController as comming'
+  });
+
 });

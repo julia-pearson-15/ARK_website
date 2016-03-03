@@ -11,6 +11,7 @@
   <script src="/js/donate_controller.js" ></script>
   <script src="/js/impact_controller.js" ></script>
   <script src="/js/feeding_controller.js" ></script>
+  <script src="/js/comming_controller.js" ></script>
   <link rel="stylesheet" type="text/css" href="/style/style.css">
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
@@ -32,7 +33,8 @@
     </div> <!-- menu-bar -->
     <div ng-show="nav.toggle" id="second-menu">
       <ul id="second-nav-buttons">
-        <li ng-repeat="button in nav.secondNav[nav.whichNav]" ng-click="nav.menuVanish()" class="second-nav-button right"><a href="#/{{button}}" class="nav-text-main bold grey">{{button}}</a></li>
+        <li ng-repeat="button in nav.secondNav[nav.whichNav]" ng-click="nav.menuVanish()" class="second-nav-button right"><a href="#/comming_soon" class="nav-text-main bold grey">{{button}}</a></li>
+        <!-- href="#/{{button}}" -->
       </ul>
     </div>
     <div ng-mouseover="nav.reset()" class="right reset-bottom"> </div> <!-- reset -->
