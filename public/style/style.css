@@ -1,7 +1,6 @@
 body {
   min-width: 930px;
-  font-family: Ubuntu;
-  
+  font-family: 'Ubuntu', sans-serif;
 }
 .orange{
   color: #FF543E;
